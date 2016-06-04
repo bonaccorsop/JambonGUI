@@ -28,6 +28,6 @@ services:
             # WEB_DOCUMENT_INDEX: index.php
 
             #Application Variables
-            VIRTUAL_HOST: dev.shop.jambonsalumeria.com
+            VIRTUAL_HOST: shop.jambonsalumeria.com
 
             APP_ENV: local
