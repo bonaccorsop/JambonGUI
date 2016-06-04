@@ -1,0 +1,3 @@
+FROM mosaicoon/lep:197
+
+RUN apt-get install -y nodejs npm
