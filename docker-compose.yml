@@ -1,0 +1,31 @@
+version: '2'
+services:
+    web:
+        image: mosaicoon/lep:1956
+        #build:
+        ports:
+            - "8082:80"
+        volumes:
+            #Code
+            - ./:/app/code
+        working_dir: /app/code
+        network_mode: "bridge"
+        volumes:
+            #Code
+            - ./:/app/code
+        environment:
+            APP_CWD:  "/app/code"
+            FILES_DIR:  "/app/files"
+            VHOST_ROOT:  "/app/code/public"
+            PHP_DISPLAYERRORS: "On"
+            PHP_ERRORREPORTING: "E_ALL"
+            PHP_MEMORYLIMIT: "512M"
+
+            FPM_CLEARENV: "no"
+            # WEB_DOCUMENT_ROOT:  /app/code/public
+            # WEB_DOCUMENT_INDEX: index.php
+
+            #Application Variables
+            VIRTUAL_HOST: dev.shop.jambonsalumeria.com
+
+            APP_ENV: local

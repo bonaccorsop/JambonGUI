@@ -1,0 +1,25 @@
+{
+    "require": {
+        "mikecao/flight": "1.2.20",
+        "nesbot/carbon": "1.21.0",
+        "symfony/var-dumper": "2.7.7",
+        "symfony/console": "*"
+    },
+
+    "require-dev": {
+    },
+
+    "autoload": {
+
+        "psr-4": {
+        },
+        "classmap": [
+        ]
+    },
+
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin/",
+        "process-timeout": 600
+    }
+}
