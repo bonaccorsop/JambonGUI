@@ -7,6 +7,19 @@
 supervisord.log
 supervisord.pid
 
+### NodeJS ###
+/node_modules
+/dist
+/build
+/.tmp
+/tmp
+/.sass-cache
+/bower_components
+*.sublime-project
+*.sublime-workspace
+/.phpintel
+/npm-debug.log
+
 
 ### SublimeText ###
 # cache files for sublime text
