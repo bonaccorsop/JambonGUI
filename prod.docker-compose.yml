@@ -1,0 +1,24 @@
+version: '2'
+services:
+    web:
+
+        build:
+            context: .
+            dockerfile: Dockerfile.prod
+
+        working_dir: /app/code
+
+        network_mode: "bridge"
+
+        environment:
+            APP_CWD:  "/app/code"
+            FILES_DIR:  "/app/files"
+            VHOST_ROOT:  "/app/code/public"
+            PHP_DISPLAYERRORS: "On"
+            PHP_ERRORREPORTING: "E_ALL"
+            PHP_MEMORYLIMIT: "512M"
+
+            FPM_CLEARENV: "no"
+            VIRTUAL_HOST: shop.jambonsalumeria.com
+
+            APP_ENV: local

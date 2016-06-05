@@ -1,0 +1,15 @@
+FROM mosaicoon/lep:197
+
+ENV APP_ENV='prod'
+
+RUN apt-get install -y nodejs npm
+
+
+#Add Code
+ADD . /app/code
+
+WORKDIR /app/code
+
+#Build
+RUN composer update
+RUN npm install

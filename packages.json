@@ -1,0 +1,15 @@
+{
+  "name": "JambonGui",
+  "version": "0.0.0",
+  "description": "Jambon Gui",
+  "author": "Pietro Bonaccorso",
+  "scripts": {
+  },
+  "dependencies": {
+    "lodash": "4.13.1"
+  },
+  "engine": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
